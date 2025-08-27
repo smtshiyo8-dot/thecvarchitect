@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CV Architect</title>
+    <!-- Use Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the scroll-to-top button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Place at the bottom */
+            right: 30px; /* Place at the right */
+            z-index: 99; /* Higher z-index to be on top of other elements */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #C5A200; /* Background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 50%; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #scrollToTopBtn:hover {
+            opacity: 0.8; /* Reduce opacity on hover */
+        }
+
+        /* Set a consistent font for the body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom scroll-behavior for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Scroll-to-top button -->
+    <button id="scrollToTopBtn" title="Go to top">
+        &#8593;
+    </button>
+
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+          
+          <!--Logo only-->
+          <div class="flex items-center space-x-2 mb-4 md:mb-0">
+            <img src="/images/image.png" alt="The CV Architect Logo" class="h-20 w-auto object-contain">
+            <h1 class="text-2xl font-bold text-blue-600">The CV Architect</h1>
+          </div>
+
+          <!--Nav links-->
+            <div class="flex flex-wrap justify-center space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Our Services</a>
+                <a href="#process" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Process</a>
+                <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Pricing</a>
+                <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-100 py-20 px-4 md:px-0">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Unlock Your Career Potential with <span class="text-blue-600">The CV Architect</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 mb-6">
+                    We specialize in transforming your standard resume into a powerful, highly targeted document designed to captivate hiring managers and bypass Applicant Tracking Systems (ATS).
+                </p>
+                <a href="#contact" class="bg-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                    Get Started Today
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center" style="display:none;"> <!--"style="display:none;" will be removed in future-->
+                <!-- Placeholder for an image or graphic -->
+                <img src="https://placehold.co/500x350/E5E7EB/6B7280?text=Career+Success" alt="Success Stories" class="rounded-xl shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 px-4 md:px-0 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Mission: Your Interview Success</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1: Targeted Optimization -->
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md text-center">
+                    <div class="text-4xl text-blue-600 mb-4">🎯</div>
+                    <h3 class="text-xl font-semibold mb-2">Targeted Optimization</h3>
+                    <p class="text-gray-600">We tailor your CV to each specific job ad, ensuring maximum relevance.</p>
+                </div>
+                <!-- Feature 2: ATS Friendly -->
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md text-center">
+                    <div class="text-4xl text-blue-600 mb-4">🤖</div>
+                    <h3 class="text-xl font-semibold mb-2">ATS Friendly</h3>
+                    <p class="text-gray-600">Our techniques help your CV pass Applicant Tracking Systems with ease.</p>
+                </div>
+                <!-- Feature 3: Hiring Manager Impact -->
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md text-center">
+                    <div class="text-4xl text-blue-600 mb-4">👤</div>
+                    <h3 class="text-xl font-semibold mb-2">Hiring Manager Impact</h3>
+                    <p class="text-gray-600">Crafted to capture attention and make a lasting impression on recruiters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 md:px-0 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Personalized CV Customization Service</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1: Deep Job Analysis -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <h4 class="text-xl font-semibold text-blue-600 mb-2">Deep Job Analysis</h4>
+                    <p class="text-gray-600">We thoroughly dissect the job advertisement to understand its core demands.</p>
+                </div>
+                <!-- Service 2: Strategic Keyword Integration -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <h4 class="text-xl font-semibold text-blue-600 mb-2">Strategic Keyword Integration</h4>
+                    <p class="text-gray-600">Seamlessly weave in keywords to ensure ATS compatibility and recruiter relevance.</p>
+                </div>
+                <!-- Service 3: Tailored Content Refinement -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <h4 class="text-xl font-semibold text-blue-600 mb-2">Tailored Content Refinement</h4>
+                    <p class="text-gray-600">Highlight your most relevant achievements and skills for the specific role.</p>
+                </div>
+                <!-- Service 4: Professional Formatting -->
+                <div class="bg-white p-6 rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <h4 class="text-xl font-semibold text-blue-600 mb-2">Professional Formatting</h4>
+                    <p class="text-gray-600">Ensure a clean, readable, and impactful presentation that stands out.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Submission Process -->
+    <section id="process" class="py-20 px-4 md:px-0 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Simple Submission Process</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full text-2xl font-bold mb-4">
+                        01
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Prepare Your Documents</h4>
+                    <p class="text-gray-600">Gather your current, standard CV and the specific job advertisement.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full text-2xl font-bold mb-4">
+                        02
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Email Your Request</h4>
+                    <p class="text-gray-600">Send both documents to TheCVArchitect1@gmail.com with at least 48 hours lead time.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full text-2xl font-bold mb-4">
+                        03
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Make Your Payment</h4>
+                    <p class="text-gray-600">A payment of R100 per CV customization is required. Details are below.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center text-center p-6 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full text-2xl font-bold mb-4">
+                        04
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Receive Your Tailored CV</h4>
+                    <p class="text-gray-600">You will receive your professionally tailored CV within 24 hours of payment confirmation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-4 md:px-0 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Pricing & Payment Details</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                We offer a transparent and affordable pricing structure.
+            </p>
+            <div class="bg-white p-8 rounded-xl shadow-lg inline-block">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-4">Service Fee:</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-6">
+                    R100 <span class="text-xl font-normal text-gray-500">per CV customization</span>
+                </p>
+                <div class="text-left mt-6">
+                    <h4 class="text-lg font-semibold mb-2">Banking Details for Payment:</h4>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li><strong class="font-medium">Bank:</strong> TymeBank</li>
+                        <li><strong class="font-medium">Account Number:</strong> 51010871773</li>
+                        <li><strong class="font-medium">Branch Code:</strong> 678910</li>
+                        <li><strong class="font-medium">Reference:</strong> Client's Name Surname</li>
+                    </ul>
+                    <p class="text-sm mt-4 text-gray-500">Please use your full name and surname as the payment reference to ensure timely processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-4 md:px-0 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ 1 -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">What is a "standard CV"?</h3>
+                    <p class="text-gray-600">A standard CV is your general resume that you might use for broad applications. It typically lists your work history, education, skills, and achievements without specific tailoring to a single job. We use this as a base to create your targeted CV.</p>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Why do I need to submit the job advertisement?</h3>
+                    <p class="text-gray-600">The job advertisement is crucial as it contains the specific keywords, requirements, and expectations that we will use to customize your CV. Without it, we cannot effectively tailor your document to the target role.</p>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">What if the job closing date is less than 48 hours away?</h3>
+                    <p class="text-gray-600">While we strive to assist all clients, our 48-hour lead time is essential to maintain the quality and thoroughness of our customization process. Requests submitted within 48 hours of the closing date may be accepted depending on the volume of the request we have at that particular time.</p>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Can I pay for multiple CV customizations at once?</h3>
+                    <p class="text-gray-600">Yes, you can pay for multiple customizations. Please indicate in your email how many jobs you are requesting tailored CVs for, and adjust your payment accordingly (e.g., R200 for two CVs). Remember to submit each corresponding job advertisement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 px-4 md:px-0 bg-blue-600 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Contact Us & Get Started Today</h2>
+            <p class="text-lg max-w-2xl mx-auto mb-8">
+                Ready to transform your job search and stand out from the competition? Contact The CV Architect today and take the first step towards securing your next interview.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center md:space-x-8 space-y-6 md:space-y-0">
+                <!-- Email contact -->
+                <div class="bg-white text-gray-800 p-6 rounded-xl shadow-lg w-full md:w-1/3 text-center">
+                    <h3 class="text-xl font-semibold mb-2">Email Your Documents</h3>
+                    <p class="text-lg font-bold text-blue-600">TheCVArchitect1@gmail.com</p>
+                    <p class="text-sm text-gray-500 mt-2">(Remember the 48-hour submission window before closing date)</p>
+                </div>
+                <!-- Phone contact -->
+                <div class="bg-white text-gray-800 p-6 rounded-xl shadow-lg w-full md:w-1/3 text-center">
+                    <h3 class="text-xl font-semibold mb-2">Speak to Us Directly</h3>
+                    <ul class="text-lg font-bold text-blue-600 space-y-1">
+                        <li>+27 67 758 8664</li>
+                        <li>+27 73 130 4465</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 md:px-0">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 The CV Architect. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to handle the scroll-to-top button functionality -->
+    <script>
+        // Get the button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
